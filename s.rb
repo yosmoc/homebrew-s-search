@@ -14,6 +14,8 @@ class S < Formula
     system 'go', 'get', 'github.com/mitchellh/go-homedir'
     system 'go', 'get', 'github.com/zquestz/go-ucl'
     system 'go', 'get', 'github.com/spf13/cobra'
+    system 'go', 'get', 'github.com/zquestz/s/providers'
+    system 'go', 'get', 'github.com/zquestz/s/server'
 
     mkdir_p buildpath/'src/github.com/zquestz/s'
     ln_s buildpath/'search', buildpath/'src/github.com/zquestz/s/.'
