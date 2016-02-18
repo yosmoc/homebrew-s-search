@@ -6,3 +6,7 @@
 $ brew tap samurai20000/s
 $ brew install s
 ```
+
+## License
+
+MIT
