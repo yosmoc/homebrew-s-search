@@ -4,12 +4,11 @@ class S < Formula
   desc "Web search from the terminal"
   homepage "https://github.com/zquestz/s"
   url "https://github.com/zquestz/s/archive/v0.4.2.tar.gz"
-  version "0.4.2"
   sha256 "12f1e9ff5d52703d8e8e14755c8b34d3c15d9f39295222c16860077c15cef807"
 
-  head 'https://github.com/zquestz/s.git'
+  head "https://github.com/zquestz/s.git"
 
-  depends_on 'go' => :build
+  depends_on "go" => :build
 
   go_resource "github.com/mitchellh/go-homedir" do
     url "https://github.com/mitchellh/go-homedir.git",
