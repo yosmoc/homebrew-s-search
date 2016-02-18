@@ -25,16 +25,6 @@ class S < Formula
       :revision => "9e5940bb3930921a83dcb0f9e20a32e3b1335590"
   end
 
-  go_resource "github.com/zquestz/s/providers" do
-    url "https://github.com/zquestz/s/providers.git",
-      :revision => "66a10b882169f8b24fb59f68f7818f07a65407e6"
-  end
-
-  go_resource "github.com/zquestz/s/server" do
-    url "https://github.com/zquestz/s/server.git",
-      :revision => "2eaa10b5eaff36b32fb1a0363307a9a2e992014c"
-  end
-
   def install
     ENV["GOPATH"] = buildpath
     mkdir_p buildpath/"src/github.com/zquestz"
