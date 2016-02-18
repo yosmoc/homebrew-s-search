@@ -25,6 +25,21 @@ class S < Formula
       :revision => "9e5940bb3930921a83dcb0f9e20a32e3b1335590"
   end
 
+  go_resource "github.com/NYTimes/gziphandler" do
+    url "https://github.com/NYTimes/gziphandler.git",
+      :revision => "a88790d49798560db24af70fb6a10a66e2549a72"
+  end
+
+  go_resource "github.com/spf13/pflag" do
+    url "https://github.com/spf13/pflag.git",
+      :revision => "7f60f83a2c81bc3c3c0d5297f61ddfa68da9d3b7"
+  end
+
+  go_resource "golang.org/x/text" do
+    url "https://go.googlesource.com/text.git",
+      :revision => "07b9a78963006a15c538ec5175243979025fa7a8"
+  end
+
   def install
     ENV["GOPATH"] = buildpath
     mkdir_p buildpath/"src/github.com/zquestz"
