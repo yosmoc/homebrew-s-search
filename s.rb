@@ -1,6 +1,6 @@
 require "language/go"
 
-class S < Formula
+class SSearch < Formula
   desc "Web search from the terminal"
   homepage "https://github.com/zquestz/s"
   url "https://github.com/zquestz/s/archive/v0.4.2.tar.gz"
