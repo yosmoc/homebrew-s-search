@@ -46,8 +46,7 @@ class SSearch < Formula
     ln_s buildpath, buildpath/"src/github.com/zquestz/s"
     Language::Go.stage_deps resources, buildpath/"src"
 
-    system "go", "build", "-o", "s"
-    bin.install "s"
+    system "go", "build", "-o", "#{bin}/s"
   end
 
   test do
