@@ -42,7 +42,7 @@ class SSearch < Formula
 
   def install
     ENV["GOPATH"] = buildpath
-    mkdir_p buildpath/"src/github.com/zquestz"
+    (buildpath/"src/github.com/zquestz").mkpath
     ln_s buildpath, buildpath/"src/github.com/zquestz/s"
     Language::Go.stage_deps resources, buildpath/"src"
 
