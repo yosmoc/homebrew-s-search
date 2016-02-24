@@ -50,6 +50,7 @@ class SSearch < Formula
   end
 
   test do
-    system "#{bin}/s", "--version"
+    assert_equal "https://www.google.com/search?q=homebrew\n",
+      shell_output("#{bin}/s -p google -b echo homebrew")
   end
 end
